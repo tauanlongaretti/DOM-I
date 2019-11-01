@@ -41,28 +41,24 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-const nav = document.createElement("nav");
+let navItems = document.querySelectorAll('a');
 
-const aOne = document.createElement("a");
-aOne.href = "#"
-aOne.textContent = "Services"
+navItems[0].textContent = siteContent['nav']['nav-item-1'];
+navItems[1].textContent = siteContent['nav']['nav-item-2'];
+navItems[2].textContent = siteContent['nav']['nav-item-3'];
+navItems[3].textContent = siteContent['nav']['nav-item-4'];
+navItems[4].textContent = siteContent['nav']['nav-item-5'];
+navItems[5].textContent = siteContent['nav']['nav-item-6'];
 
-const aTwo = document.createElement("a");
-aTwo.href = "#"
-aTwo.textContent = "Product"
+navItems.forEach((greenColor) => {
+  return greenColor.style.color = 'green'
+});
 
-const aThree = document.createElement("a");
-aThree.href = "#"
-aThree.textContent = "Vision"
+let h1 = document.querySelector('h1');
+h1.textContent = siteContent['cta']['h1'];
 
-const aFour = document.createElement("a");
-aFour.href = "#"
-aFour.textContent = "Features"
+let button = document.querySelector('button');
+button.textContent = siteContent['cta']['button'];
 
-const aFive = document.createElement("a");
-aFive.href = "#"
-aFive.textContent = "About"
-
-const aSix = document.createElement("a");
-aSix.href = "#"
-aSix.textContent = "Contact"
+let codeSnip = document.getElementById('cta-img');
+codeSnip.setAttribute('src', siteContent['cta']['img-src']);

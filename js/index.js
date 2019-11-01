@@ -93,6 +93,7 @@ h4[5].textContent = siteContent['contact']['contact-h4'];
 
 let address = document.querySelector('p');
 content[5].textContent = siteContent['contact']['address'];
+address.style.wrap = 'wrap';
 
 let phone = document.querySelector('p');
 content[6].textContent = siteContent['contact']['phone'];
@@ -104,3 +105,20 @@ content[7].textContent = siteContent['contact']['email'];
 
 let footer = document.querySelector('p');
 content[8].textContent = siteContent['footer']['copyright'];
+
+// Append Child
+
+let gallery = document.querySelector('a');
+gallery.textContent = 'Gallery';
+gallery.href = '#';
+gallery.style.color = 'green';
+let nav = document.querySelector('nav');
+nav.appendChild(gallery);
+
+// Prepend
+
+let home = document.querySelector('a');
+home.textContent = 'Home';
+home.href = '#';
+home.style.color = 'green';
+nav.prepend(home);

@@ -54,6 +54,8 @@ navItems.forEach((greenColor) => {
   return greenColor.style.color = 'green'
 });
 
+// CTA
+
 let h1 = document.querySelector('h1');
 h1.textContent = siteContent['cta']['h1'];
 
@@ -62,3 +64,21 @@ button.textContent = siteContent['cta']['button'];
 
 let codeSnip = document.getElementById('cta-img');
 codeSnip.setAttribute('src', siteContent['cta']['img-src']);
+
+// Main Content
+
+let h4 = document.querySelectorAll('h4');
+
+h4[0].textContent = siteContent['main-content']['features-h4'];
+h4[1].textContent = siteContent['main-content']['about-h4'];
+h4[2].textContent = siteContent['main-content']['services-h4'];
+h4[3].textContent = siteContent['main-content']['product-h4'];
+h4[4].textContent = siteContent['main-content']['vision-h4'];
+
+let content = document.querySelectorAll('content');
+
+content[0].textContent = siteContent['main-content']['features-content'];
+content[1].textContent = siteContent['main-content']['about-content'];
+content[2].textContent = siteContent['main-content']['services-content'];
+content[3].textContent = siteContent['main-content']['product-content'];
+content[4].textContent = siteContent['main-content']['vision-content'];
